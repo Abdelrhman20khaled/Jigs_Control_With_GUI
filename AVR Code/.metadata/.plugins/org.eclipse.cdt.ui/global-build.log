@@ -1,0 +1,4120 @@
+03:29:46 **** Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main_App.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:209: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11762 bytes (35.9% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:30:35 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11778 bytes (35.9% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:30:54 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11786 bytes (36.0% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:31:03 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11786 bytes (36.0% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:34:38 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11846 bytes (36.2% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:52:11 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11936 bytes (36.4% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:52:39 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11936 bytes (36.4% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:53:04 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11936 bytes (36.4% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:53:45 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11942 bytes (36.4% Full)
+(.text + .data + .bootloader)
+
+Data:         56 bytes (2.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:53:58 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11942 bytes (36.4% Full)
+(.text + .data + .bootloader)
+
+Data:         56 bytes (2.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:54:13 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11946 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:         60 bytes (2.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:58:16 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Jig_Control.elf  "Jig_Control.eep"
+Finished building: Jig_Control.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11946 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:         60 bytes (2.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:58:41 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11946 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:         60 bytes (2.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:58:57 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11946 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:         60 bytes (2.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:34:31 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11946 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:         60 bytes (2.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:37:15 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12228 bytes (37.3% Full)
+(.text + .data + .bootloader)
+
+Data:         94 bytes (4.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:37:53 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12228 bytes (37.3% Full)
+(.text + .data + .bootloader)
+
+Data:         94 bytes (4.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:39:14 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12240 bytes (37.4% Full)
+(.text + .data + .bootloader)
+
+Data:         94 bytes (4.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:43:22 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:155: error: expected declaration or statement at end of input
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+make: *** [Main_App.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:43:41 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   14036 bytes (42.8% Full)
+(.text + .data + .bootloader)
+
+Data:        146 bytes (7.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:43:46 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   14036 bytes (42.8% Full)
+(.text + .data + .bootloader)
+
+Data:        146 bytes (7.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:44:29 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   14038 bytes (42.8% Full)
+(.text + .data + .bootloader)
+
+Data:        146 bytes (7.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:46:05 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   14036 bytes (42.8% Full)
+(.text + .data + .bootloader)
+
+Data:        146 bytes (7.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:46:42 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12262 bytes (37.4% Full)
+(.text + .data + .bootloader)
+
+Data:         94 bytes (4.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:47:55 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12262 bytes (37.4% Full)
+(.text + .data + .bootloader)
+
+Data:         94 bytes (4.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:48:49 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12262 bytes (37.4% Full)
+(.text + .data + .bootloader)
+
+Data:         94 bytes (4.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:50:14 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12262 bytes (37.4% Full)
+(.text + .data + .bootloader)
+
+Data:         94 bytes (4.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:50:26 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12262 bytes (37.4% Full)
+(.text + .data + .bootloader)
+
+Data:         94 bytes (4.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:51:34 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11288 bytes (34.4% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:53:48 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11298 bytes (34.5% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:54:38 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11306 bytes (34.5% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (2.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:57:11 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11306 bytes (34.5% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (2.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:57:43 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11306 bytes (34.5% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (2.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:58:09 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11316 bytes (34.5% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (2.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:00:46 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11292 bytes (34.5% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:02:31 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11236 bytes (34.3% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (2.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:03:33 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10940 bytes (33.4% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:03:56 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10940 bytes (33.4% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:05:13 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11208 bytes (34.2% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:07:16 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11208 bytes (34.2% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:12:27 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11308 bytes (34.5% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:13:09 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11288 bytes (34.4% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:14:00 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11288 bytes (34.4% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:14:23 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11300 bytes (34.5% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:14:55 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11300 bytes (34.5% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:15:34 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11304 bytes (34.5% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:16:14 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11312 bytes (34.5% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:16:38 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11318 bytes (34.5% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:18:51 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11294 bytes (34.5% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:21:00 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11288 bytes (34.4% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:21:21 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11288 bytes (34.4% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:21:50 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11308 bytes (34.5% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:22:07 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11318 bytes (34.5% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:22:34 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11288 bytes (34.4% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:23:26 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:19: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11268 bytes (34.4% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:24:08 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J2_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12240 bytes (37.4% Full)
+(.text + .data + .bootloader)
+
+Data:         94 bytes (4.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:25:38 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   14010 bytes (42.8% Full)
+(.text + .data + .bootloader)
+
+Data:        146 bytes (7.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:26:12 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:21: warning: unused variable 'J3_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   14010 bytes (42.8% Full)
+(.text + .data + .bootloader)
+
+Data:        146 bytes (7.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:28:02 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   15858 bytes (48.4% Full)
+(.text + .data + .bootloader)
+
+Data:        200 bytes (9.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:28:28 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   15858 bytes (48.4% Full)
+(.text + .data + .bootloader)
+
+Data:        200 bytes (9.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:29:30 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   15858 bytes (48.4% Full)
+(.text + .data + .bootloader)
+
+Data:        200 bytes (9.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:31:22 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   15858 bytes (48.4% Full)
+(.text + .data + .bootloader)
+
+Data:        200 bytes (9.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:31:43 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   15858 bytes (48.4% Full)
+(.text + .data + .bootloader)
+
+Data:        200 bytes (9.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:44:40 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12658 bytes (38.6% Full)
+(.text + .data + .bootloader)
+
+Data:        200 bytes (9.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:45:21 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:70: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:79: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:89: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:112: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:121: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:131: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:154: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:163: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:173: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12648 bytes (38.6% Full)
+(.text + .data + .bootloader)
+
+Data:        226 bytes (11.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:45:52 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:70: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:79: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:89: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:112: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:121: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:131: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:154: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:163: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:173:22: warning: multi-character character constant
+../Main_App.c:173: warning: passing argument 1 of 'UART_sendString' makes pointer from integer without a cast
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12646 bytes (38.6% Full)
+(.text + .data + .bootloader)
+
+Data:        224 bytes (10.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:45:58 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:70: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:79: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:89: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:112: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:121: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:131: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:154: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:163: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:173: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12648 bytes (38.6% Full)
+(.text + .data + .bootloader)
+
+Data:        226 bytes (11.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:15:39 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"keypad.d" -MT"keypad.o" -c -o "keypad.o" "../keypad.c"
+In file included from ../keypad.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../keypad.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:209: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11766 bytes (35.9% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:16:09 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12002 bytes (36.6% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:33:27 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:54: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:64: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:74: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:84: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:94: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:104: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:114: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:124: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:134: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12616 bytes (38.5% Full)
+(.text + .data + .bootloader)
+
+Data:        118 bytes (5.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:34:52 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:52: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:62: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:72: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:82: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:92: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:102: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:112: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:122: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:132: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12720 bytes (38.8% Full)
+(.text + .data + .bootloader)
+
+Data:        232 bytes (11.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:36:22 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:52: warning: passing argument 1 of 'UART_sendByte' makes integer from pointer without a cast
+../Main_App.c:62: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:72: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:82: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:92: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:102: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:112: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:122: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:132: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12718 bytes (38.8% Full)
+(.text + .data + .bootloader)
+
+Data:        230 bytes (11.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:37:14 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:62: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:72: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:82: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:92: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:102: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:112: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:122: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:132: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12714 bytes (38.8% Full)
+(.text + .data + .bootloader)
+
+Data:        228 bytes (11.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:40:31 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c:52:20: warning: multi-character character constant
+../Main_App.c: In function 'main':
+../Main_App.c:52: warning: passing argument 1 of 'UART_sendString' makes pointer from integer without a cast
+../Main_App.c:53: error: expected ';' before 'LCD_moveCursor'
+../Main_App.c:62: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:72: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:82: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:92: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:102: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:112: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:122: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:132: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+make: *** [Main_App.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:40:35 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c:52:20: warning: multi-character character constant
+../Main_App.c: In function 'main':
+../Main_App.c:52: warning: passing argument 1 of 'UART_sendString' makes pointer from integer without a cast
+../Main_App.c:62: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:72: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:82: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:92: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:102: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:112: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:122: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:132: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12716 bytes (38.8% Full)
+(.text + .data + .bootloader)
+
+Data:        228 bytes (11.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:41:49 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11998 bytes (36.6% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:42:04 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11942 bytes (36.4% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:42:49 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11954 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:43:39 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11954 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:44:07 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11954 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:44:38 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12184 bytes (37.2% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:45:20 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11954 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:45:41 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11960 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:46:09 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11960 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:46:20 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11960 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:49:14 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11954 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:50:41 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11954 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:50:56 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11960 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:51:34 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11954 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:53:53 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11954 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:54:18 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11948 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:55:17 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11948 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:55:41 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11950 bytes (36.5% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:57:22 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c:56:20: warning: multi-character character constant
+../Main_App.c: In function 'main':
+../Main_App.c:56: warning: passing argument 1 of 'UART_sendString' makes pointer from integer without a cast
+../Main_App.c:66: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:76: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:86: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:96: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:106: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:116: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:126: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:136: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12678 bytes (38.7% Full)
+(.text + .data + .bootloader)
+
+Data:        204 bytes (10.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:57:32 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:56: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:66: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:76: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:86: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:96: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:106: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:116: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:126: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:136: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12680 bytes (38.7% Full)
+(.text + .data + .bootloader)
+
+Data:        206 bytes (10.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:58:15 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:55: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:65: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:75: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:85: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:95: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:105: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:115: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:125: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:135: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12672 bytes (38.7% Full)
+(.text + .data + .bootloader)
+
+Data:        206 bytes (10.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:00:40 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:55: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:65: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:75: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:85: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:95: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:105: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:115: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:125: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:135: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12672 bytes (38.7% Full)
+(.text + .data + .bootloader)
+
+Data:        206 bytes (10.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:02:32 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:55: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:65: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:75: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:85: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:95: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:105: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:115: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:125: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:135: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12672 bytes (38.7% Full)
+(.text + .data + .bootloader)
+
+Data:        206 bytes (10.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:03:08 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:55: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:65: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:75: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:85: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:95: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:105: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:115: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:125: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:135: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12672 bytes (38.7% Full)
+(.text + .data + .bootloader)
+
+Data:        206 bytes (10.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:04:00 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:55: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:65: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:75: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:85: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:95: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:105: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:115: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:125: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:135: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12672 bytes (38.7% Full)
+(.text + .data + .bootloader)
+
+Data:        206 bytes (10.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:04:35 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:55: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:65: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:75: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:85: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:95: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:105: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:115: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:125: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:135: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12672 bytes (38.7% Full)
+(.text + .data + .bootloader)
+
+Data:        206 bytes (10.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:05:42 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:52: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:62: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:72: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:82: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:92: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:102: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:112: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:122: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:132: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12720 bytes (38.8% Full)
+(.text + .data + .bootloader)
+
+Data:        232 bytes (11.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:40:57 **** Incremental Build of configuration Debug for project Jig_Control ****
+make all 
+Building file: ../Main_App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Main_App.d" -MT"Main_App.o" -c -o "Main_App.o" "../Main_App.c"
+In file included from ../Main_App.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main_App.c: In function 'main':
+../Main_App.c:52: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:62: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:72: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:82: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:92: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:102: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:112: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:122: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:132: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+../Main_App.c:22: warning: unused variable 'J3_Num_Pressed'
+../Main_App.c:21: warning: unused variable 'J2_Num_Pressed'
+../Main_App.c:20: warning: unused variable 'J1_Num_Pressed'
+Finished building: ../Main_App.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"keypad.d" -MT"keypad.o" -c -o "keypad.o" "../keypad.c"
+In file included from ../keypad.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../keypad.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:209: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: Jig_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Jig_Control.map -mmcu=atmega32 -o "Jig_Control.elf"  ./Main_App.o ./gpio.o ./keypad.o ./lcd.o ./uart.o   
+Finished building target: Jig_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Jig_Control.elf  >"Jig_Control.lss"
+Finished building: Jig_Control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Jig_Control.elf  "Jig_Control.hex"
+Finished building: Jig_Control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Jig_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12720 bytes (38.8% Full)
+(.text + .data + .bootloader)
+
+Data:        232 bytes (11.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

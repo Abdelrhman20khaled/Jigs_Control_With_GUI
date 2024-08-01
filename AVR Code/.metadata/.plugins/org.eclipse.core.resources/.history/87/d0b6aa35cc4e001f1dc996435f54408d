@@ -1,0 +1,147 @@
+/***************************************************************************
+ * 								Jig Controller
+ *
+ *      			   Author: Abdelrahman Khaled Sobhi
+ *
+ ***************************************************************************/
+
+
+#include "gpio.h"
+#include "keypad.h"
+#include "lcd.h"
+#include "uart.h"
+#include "std_types.h"
+#include "util/delay.h"
+
+UART_ConfigType uart_Config = {Frame_8_bit,Parity_Disable,Stop_1_bit,Buad_Rate_9600};
+
+int main()
+{
+	uint8 J1_Num_Pressed = 0;
+	uint8 J2_Num_Pressed = 0;
+	uint8 J3_Num_Pressed = 0;
+	uint8 key_value = 0;
+
+	/* Red Led */
+	GPIO_setupPinDirection(PORTC_ID,PIN0_ID,PIN_OUTPUT);
+	GPIO_writePin(PORTC_ID,PIN0_ID,LOGIC_LOW);
+
+	/* Green Led */
+	GPIO_setupPinDirection(PORTC_ID,PIN1_ID,PIN_OUTPUT);
+	GPIO_writePin(PORTC_ID,PIN1_ID,LOGIC_LOW);
+
+	/* Yellow Led */
+	GPIO_setupPinDirection(PORTC_ID,PIN2_ID,PIN_OUTPUT);
+	GPIO_writePin(PORTC_ID,PIN2_ID,LOGIC_LOW);
+
+	/* Initialize the UART for send data that controlled by the PYTHON script  */
+	UART_init(&uart_Config);
+	/* Initialize the LCD for showing the status of Jig */
+	LCD_init();
+	LCD_moveCursor(0,4);
+	LCD_displayString("Jig Test");
+	LCD_moveCursor(1,0);
+	LCD_displayString("JigX Status:OFF");
+
+	while(1)
+	{
+		key_value = KEYPAD_getPressedKey();
+
+		LCD_intgerToString(key_value);
+
+		if(key_value == '7')
+		{
+			UART_sendString("1W");
+			LCD_moveCursor(1,0);
+			LCD_displayString("Jig1 Status:ON  ");
+			GPIO_writePin(PORTC_ID,PIN1_ID,LOGIC_HIGH);
+			GPIO_writePin(PORTC_ID,PIN0_ID,LOGIC_LOW);
+			GPIO_writePin(PORTC_ID,PIN2_ID,LOGIC_LOW);
+		}
+
+		if(key_value == '8')
+		{
+			UART_sendString("1P");
+			LCD_moveCursor(1,0);
+			LCD_displayString("Jig1 Status:ON  ");
+			GPIO_writePin(PORTC_ID,PIN2_ID,LOGIC_HIGH);
+			GPIO_writePin(PORTC_ID,PIN0_ID,LOGIC_LOW);
+			GPIO_writePin(PORTC_ID,PIN1_ID,LOGIC_LOW);
+		}
+
+		if(key_value == '3')
+		{
+			UART_sendString("1S");
+			LCD_moveCursor(1,0);
+			LCD_displayString("Jig1 Status:ON  ");
+			GPIO_writePin(PORTC_ID,PIN2_ID,LOGIC_HIGH);
+			GPIO_writePin(PORTC_ID,PIN0_ID,LOGIC_LOW);
+			GPIO_writePin(PORTC_ID,PIN1_ID,LOGIC_LOW);
+		}
+
+		if(key_value == '4')
+		{
+			UART_sendString("2W");
+			LCD_moveCursor(1,0);
+			LCD_displayString("Jig2 Status:ON  ");
+			GPIO_writePin(PORTC_ID,PIN0_ID,LOGIC_HIGH);
+			GPIO_writePin(PORTC_ID,PIN1_ID,LOGIC_LOW);
+			GPIO_writePin(PORTC_ID,PIN2_ID,LOGIC_LOW);
+		}
+
+		if(key_value == '5')
+		{
+			UART_sendString("2P");
+			LCD_moveCursor(1,0);
+			LCD_displayString("Jig2 Status:ON  ");
+			GPIO_writePin(PORTC_ID,PIN1_ID,LOGIC_HIGH);
+			GPIO_writePin(PORTC_ID,PIN0_ID,LOGIC_LOW);
+			GPIO_writePin(PORTC_ID,PIN2_ID,LOGIC_LOW);
+		}
+
+		if(key_value == '6')
+		{
+			UART_sendString("2S");
+			LCD_moveCursor(1,0);
+			LCD_displayString("Jig2 Status:ON  ");
+			GPIO_writePin(PORTC_ID,PIN2_ID,LOGIC_HIGH);
+			GPIO_writePin(PORTC_ID,PIN0_ID,LOGIC_LOW);
+			GPIO_writePin(PORTC_ID,PIN1_ID,LOGIC_LOW);
+		}
+
+		if(key_value == '1')
+		{
+			UART_sendString("3W");
+			LCD_moveCursor(1,0);
+			LCD_displayString("Jig3 Status:ON  ");
+			GPIO_writePin(PORTC_ID,PIN0_ID,LOGIC_HIGH);
+			GPIO_writePin(PORTC_ID,PIN1_ID,LOGIC_LOW);
+			GPIO_writePin(PORTC_ID,PIN2_ID,LOGIC_LOW);
+		}
+
+		if(key_value == '2')
+		{
+			UART_sendString("3P");
+			LCD_moveCursor(1,0);
+			LCD_displayString("Jig3 Status:ON  ");
+			GPIO_writePin(PORTC_ID,PIN1_ID,LOGIC_HIGH);
+			GPIO_writePin(PORTC_ID,PIN0_ID,LOGIC_LOW);
+			GPIO_writePin(PORTC_ID,PIN2_ID,LOGIC_LOW);
+		}
+
+		if(key_value == '3')
+		{
+			UART_sendString("3S");
+			LCD_moveCursor(1,0);
+			LCD_displayString("Jig3 Status:ON  ");
+			GPIO_writePin(PORTC_ID,PIN2_ID,LOGIC_HIGH);
+			GPIO_writePin(PORTC_ID,PIN0_ID,LOGIC_LOW);
+			GPIO_writePin(PORTC_ID,PIN1_ID,LOGIC_LOW);
+		}
+
+
+		_delay_ms(250);
+
+	}
+
+}
