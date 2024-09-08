@@ -8,7 +8,19 @@ Date: Summer Internship 2024
 
 This Python script uses the `tkinter` library to create a graphical user interface (GUI) for monitoring three jigs. It tracks the running, pausing, and stopping times for each jig. The data is read from a serial port and is used to update the GUI in real-time. The running and pausing times are displayed in a dedicated section for each jig. Additionally, the data is written to a CSV file at a specific time each day.
 
-A jig in PCB (Printed Circuit Board) manufacturing is a specialized tool used to hold and align the PCB accurately during various stages of production, such as drilling, soldering, or testing. It ensures precise placement and reduces errors by maintaining consistent alignment of the PCB components. Jigs are crucial for improving efficiency and quality in the PCB assembly process
+A jig in PCB (Printed Circuit Board) manufacturing is a specialized tool used to hold and align the PCB accurately during various stages of production, such as drilling, soldering, or testing. It ensures precise placement and reduces errors by maintaining consistent alignment of the PCB components. Jigs are crucial for improving efficiency and quality in the PCB assembly process.
+
+## PCB Design
+
+As part of this project, a PCB design was created to support the functionality of the Jig Monitoring system. The design includes the schematic, layout, and 3D modeling for a custom PCB, which helps interface the jigs with the system via embedded sensors and control mechanisms. The PCB also supports serial communication with the system, making it an integral part of the overall setup. 
+
+### PCB Design Images
+
+![PCB Layout]
+*PCB layout showing the arrangement of components.*
+
+![PCB 3D Model](./JIG PCB/Layout.jpg)  
+*3D model of the PCB design.*
 
 ## Modules
 
