@@ -17,7 +17,7 @@ As part of this project, a PCB design was created to support the functionality o
 ### PCB Design Images
 
 ![PCB Layout]
-*PCB layout showing the arrangement of components.*
+<img src="/JIG PCB/Layout.jpg" width="650"/>
 
 ![PCB 3D Model](./JIG PCB/Layout.jpg)  
 *3D model of the PCB design.*
